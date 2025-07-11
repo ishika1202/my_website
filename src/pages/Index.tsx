@@ -8,10 +8,10 @@ const Index = () => {
   // Rotating images state
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const rotatingImages = [
-    { src: "/my_website/japan.png", alt: "Japan Experience" },
-    { src: "/my_website/uoft_hacks judge.JPG", alt: "UofT Hacks Judge" },
-    { src: "/my_website/pitch.png", alt: "Pitch Competition" },
-    { src: "/my_website/hackathon.png", alt: "Hackathon Achievement" }
+    { src: "/japan.png", alt: "Japan Experience" },
+    { src: "/uoft_hacks judge.JPG", alt: "UofT Hacks Judge" },
+    { src: "/pitch.png", alt: "Pitch Competition" },
+    { src: "/hackathon.png", alt: "Hackathon Achievement" }
   ];
 
   // Rotate images every 2 seconds
@@ -146,7 +146,7 @@ const Index = () => {
                   <Mail className="w-6 h-6" />
                 </a>
                 <a 
-                  href="/my_website/ishika_resume.pdf"
+                  href="/ishika_resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"
@@ -165,7 +165,7 @@ const Index = () => {
             >
               <div className="relative">
                 <img 
-                  src="/my_website/ishikaimage.png"
+                  src="/ishikaimage.png"
                   alt="Ishika Mittal - AI Engineer and Founder" 
                   className="w-[500px] h-auto object-contain object-bottom"
                   onError={(e) => {
@@ -227,7 +227,7 @@ const Index = () => {
                                                  {/* Left side - Large Amazon Logo */}
                          <div className="flex justify-center lg:justify-start items-start">
                            <img 
-                             src="/my_website/amazon.png"
+                             src="/amazon.png"
                              alt="Amazon Robotics Logo" 
                              className="w-56 h-40 lg:w-72 lg:h-48 object-contain"
                            />
@@ -295,7 +295,7 @@ const Index = () => {
                         {/* Left side - Large FlicFit Logo */}
                         <div className="flex justify-center lg:justify-start items-start">
                           <img 
-                            src="/my_website/flicfit1.png"
+                            src="/flicfit1.png"
                             alt="FlicFit Logo" 
                             className="w-56 h-40 lg:w-72 lg:h-48 object-contain"
                           />
@@ -356,7 +356,7 @@ const Index = () => {
                         {/* Left side - Large Nokia Logo */}
                         <div className="flex justify-center lg:justify-start items-start">
                           <img 
-                            src="/my_website/Nokia-Logo.jpg"
+                            src="/Nokia-Logo.jpg"
                             alt="Nokia Logo" 
                             className="w-56 h-40 lg:w-72 lg:h-48 object-contain"
                           />
@@ -583,7 +583,7 @@ const Index = () => {
                   {/* Project Image */}
                   <div className="h-48 bg-gray-200 overflow-hidden">
                     <img 
-                      src="/my_website/memora.png"
+                      src="/memora.png"
                       alt="Memora AI Project" 
                       className="w-full h-full object-cover"
                     />
@@ -635,7 +635,7 @@ const Index = () => {
                   {/* Project Image */}
                   <div className="h-48 bg-gray-200 overflow-hidden">
                     <img 
-                      src="/my_website/route.png"
+                      src="/route.png"
                       alt="Random Route Generator Project" 
                       className="w-full h-full object-cover"
                     />
@@ -687,7 +687,7 @@ const Index = () => {
                   {/* Project Image */}
                   <div className="h-48 bg-gray-200 overflow-hidden">
                     <img 
-                      src="/my_website/cricket.png"
+                      src="/cricket.png"
                       alt="Cricket Score Predictor Project" 
                       className="w-full h-full object-cover"
                     />
@@ -758,7 +758,7 @@ const Index = () => {
                   {/* Left side - Community Image */}
                   <div className="relative overflow-hidden rounded-l-xl lg:rounded-r-none">
                     <img 
-                      src="/my_website/community.png"
+                      src="/community.png"
                       alt="Community Leadership" 
                       className="w-full h-full min-h-[300px] lg:min-h-[400px] object-cover"
                     />
