@@ -1,69 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 20% 25%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 20% 25%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 20% 25%;
-    --primary: 270 25% 60%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 240 15% 95%;
-    --secondary-foreground: 240 20% 25%;
-    --muted: 240 15% 95%;
-    --muted-foreground: 240 10% 40%;
-    --accent: 240 15% 95%;
-    --accent-foreground: 240 20% 25%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 15% 90%;
-    --input: 240 15% 90%;
-    --ring: 270 25% 60%;
-    --radius: 0.75rem;
-    --surface: 240 20% 98%;
-  }
-
-  .dark {
-    --background: 224 71.4% 4.1%;
-    --foreground: 210 20% 98%;
-    --card: 224 71.4% 4.1%;
-    --card-foreground: 210 20% 98%;
-    --popover: 224 71.4% 4.1%;
-    --popover-foreground: 210 20% 98%;
-    --primary: 263.4 70% 50.4%;
-    --primary-foreground: 210 20% 98%;
-    --secondary: 215 27.9% 16.9%;
-    --secondary-foreground: 210 20% 98%;
-    --muted: 215 27.9% 16.9%;
-    --muted-foreground: 217.9 10.6% 64.9%;
-    --accent: 215 27.9% 16.9%;
-    --accent-foreground: 210 20% 98%;
+    /* Grey theme color palette to match reference */
+    --background: 220 15% 20%;           /* Medium grey background like reference */
+    --foreground: 220 9% 98%;            /* Light text */
+    
+    --card: 220 12% 24%;                 /* Slightly lighter grey for cards */
+    --card-foreground: 220 9% 98%;
+    
+    --popover: 220 20% 18%;
+    --popover-foreground: 220 9% 98%;
+    
+    --primary: 217 91% 60%;               /* Blue accent */
+    --primary-foreground: 220 9% 98%;
+    
+    --secondary: 262 83% 58%;             /* Purple accent */
+    --secondary-foreground: 220 9% 98%;
+    
+    --muted: 220 14% 25%;                /* Muted backgrounds */
+    --muted-foreground: 220 9% 70%;      /* Muted text */
+    
+    --accent: 217 91% 60%;               /* Same as primary */
+    --accent-foreground: 220 9% 98%;
+    
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 20% 98%;
-    --border: 215 27.9% 16.9%;
-    --input: 215 27.9% 16.9%;
-    --ring: 263.4 70% 50.4%;
-    --surface: 224 71.4% 4.1%;
+    
+    --border: 220 14% 25%;               /* Subtle borders */
+    --input: 220 20% 18%;                /* Input backgrounds */
+    --ring: 217 91% 60%;                 /* Focus rings */
+    
+    --radius: 0.5rem;
   }
-
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground antialiased;
-    font-feature-settings: "ss01" on, "ss02" on, "cv01" on, "cv02" on;
-  }
-
-  .glass {
-    @apply bg-white/10 backdrop-blur-lg border border-white/20;
+  
+  .dark {
+    --background: 220 15% 20%;
+    --foreground: 220 9% 98%;
+    
+    --card: 220 12% 24%;
+    --card-foreground: 220 9% 98%;
+    
+    --popover: 220 20% 18%;
+    --popover-foreground: 220 9% 98%;
+    
+    --primary: 217 91% 60%;
+    --primary-foreground: 220 9% 98%;
+    
+    --secondary: 262 83% 58%;
+    --secondary-foreground: 220 9% 98%;
+    
+    --muted: 220 14% 25%;
+    --muted-foreground: 220 9% 70%;
+    
+    --accent: 217 91% 60%;
+    --accent-foreground: 220 9% 98%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    
+    --border: 220 14% 25%;
+    --input: 220 20% 18%;
+    --ring: 217 91% 60%;
   }
 }
 
-.animate-float {
-  animation: float 6s ease-in-out infinite;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom animations and effects */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Gradient text effects */
+.gradient-text {
+  background: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(262 83% 58%) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(220 26% 14%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(220 14% 25%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(217 91% 60%);
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hover effects */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+}
+
+/* Tech grid background */
+.tech-grid {
+  background-image: 
+    linear-gradient(to right, rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Glow effects */
+.glow-blue {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+.glow-purple {
+  box-shadow: 0 0 20px rgba(147, 51, 234, 0.3);
+}
+
+/* 3D Flip Card Effect */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.hover\:rotate-y-180:hover {
+  transform: rotateY(180deg);
 }
