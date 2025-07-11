@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, FileText, Rocket, Sparkles, Target, MessageCircle, ArrowRight, Code, Database, Cloud, Cpu, Quote, ExternalLink } from "lucide-react";
+import { Github, Linkedin, Mail, FileText, Rocket, Sparkles, Target, MessageCircle, ArrowRight, Code, Database, Cloud, Cpu, Quote, ExternalLink, Twitter } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
@@ -111,6 +111,14 @@ const Index = () => {
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   <Linkedin className="w-6 h-6" />
+                </a>
+                <a 
+                  href="https://x.com/imittalishika" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  <Twitter className="w-6 h-6" />
                 </a>
                 <a 
                   href="mailto:ishika.mittal@mail.utoronto.ca"
@@ -576,31 +584,100 @@ const Index = () => {
                 <h2 className="text-3xl font-bold text-white">Accomplishments</h2>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <motion.div 
-                  whileHover={{ scale: 1.05 }}
-                  className="bg-card rounded-xl p-6 shadow-lg text-center"
-                >
-                  <div className="text-4xl font-bold text-[#6699cc] mb-2">Cansbridge Fellowship 2024</div>
-                  <p className="text-gray-300">Acceptence Rate - 1%</p>
-                </motion.div>
-
-                <motion.div 
-                  whileHover={{ scale: 1.05 }}
-                  className="bg-card rounded-xl p-6 shadow-lg text-center"
-                >
-                  <div className="text-4xl font-bold text-[#6699cc] mb-2">TreeHacks 2024 Track Winner</div>
-                  <p className="text-gray-300">:)</p>
-                </motion.div>
-
-                <motion.div 
-                  whileHover={{ scale: 1.05 }}
-                  className="bg-card rounded-xl p-6 shadow-lg text-center"
-                >
-                  <div className="text-4xl font-bold text-[#6699cc] mb-2">National Rank 1</div>
-                  <p className="text-gray-300">National Interactive Maths Olympiad 2016</p>
-                </motion.div>
-              </div>
+              {/* Large Mirror Effect Square */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                whileHover={{ scale: 1.02 }}
+                className="relative max-w-6xl mx-auto"
+              >
+                {/* Mirror Effect Background */}
+                <div className="relative bg-gradient-to-br from-white/30 to-white/10 backdrop-blur-xl border-2 border-white/40 rounded-3xl p-12 min-h-[600px] shadow-[0_0_50px_rgba(255,255,255,0.1)]">
+                  {/* Clean mirror reflection */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/25 via-transparent to-[#6699cc]/20 rounded-3xl"></div>
+                  
+                  {/* Subtle diagonal shine */}
+                  <div className="absolute top-0 left-0 w-full h-full overflow-hidden rounded-3xl">
+                    <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-white/30 via-transparent to-transparent transform rotate-12 scale-150"></div>
+                  </div>
+                  
+                  {/* Clean shimmer effect */}
+                  <div className="absolute inset-0 overflow-hidden rounded-3xl">
+                    <div className="absolute inset-0 opacity-20">
+                      <div className="absolute top-0 left-0 w-8 h-full bg-gradient-to-r from-transparent via-white/80 to-transparent mirror-shimmer"></div>
+                    </div>
+                  </div>
+                  
+                  {/* Content */}
+                  <div className="relative z-20 space-y-8">
+                    <div className="text-center mb-8">
+                      <h3 className="text-2xl font-bold text-white mb-2">Key Achievements</h3>
+                      <div className="w-24 h-1 bg-[#6699cc] mx-auto rounded-full"></div>
+                    </div>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-white">
+                      {/* Left Column */}
+                      <div className="space-y-6">
+                        <div className="flex items-start gap-4">
+                          <div className="w-3 h-3 bg-[#6699cc] rounded-full mt-2 flex-shrink-0 shadow-lg"></div>
+                          <div>
+                            <h4 className="font-semibold text-[#6699cc] text-lg mb-1">Cansbridge Fellowship 2024</h4>
+                            <p className="text-gray-300">Acceptance Rate - 1%. Prestigious fellowship program for emerging leaders.</p>
+                          </div>
+                        </div>
+                        
+                        <div className="flex items-start gap-4">
+                          <div className="w-3 h-3 bg-[#6699cc] rounded-full mt-2 flex-shrink-0 shadow-lg"></div>
+                          <div>
+                            <h4 className="font-semibold text-[#6699cc] text-lg mb-1">TreeHacks 2024 Track Winner</h4>
+                            <p className="text-gray-300">Stanford's premier hackathon - won track for innovative AI solution.</p>
+                          </div>
+                        </div>
+                        
+                        <div className="flex items-start gap-4">
+                          <div className="w-3 h-3 bg-[#6699cc] rounded-full mt-2 flex-shrink-0 shadow-lg"></div>
+                          <div>
+                            <h4 className="font-semibold text-[#6699cc] text-lg mb-1">National Rank 1</h4>
+                            <p className="text-gray-300">National Interactive Maths Olympiad 2016 - top performer nationwide.</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/* Right Column */}
+                      <div className="space-y-6">
+                        <div className="flex items-start gap-4">
+                          <div className="w-3 h-3 bg-[#6699cc] rounded-full mt-2 flex-shrink-0 shadow-lg"></div>
+                          <div>
+                            <h4 className="font-semibold text-[#6699cc] text-lg mb-1">Tech Lead Toronto</h4>
+                            <p className="text-gray-300">Leading 2600+ women in tech community at Rewriting the Code.</p>
+                          </div>
+                        </div>
+                        
+                        <div className="flex items-start gap-4">
+                          <div className="w-3 h-3 bg-[#6699cc] rounded-full mt-2 flex-shrink-0 shadow-lg"></div>
+                          <div>
+                            <h4 className="font-semibold text-[#6699cc] text-lg mb-1">WISE STEM Conference</h4>
+                            <p className="text-gray-300">Organized 300+ attendee nation-wide conference in Canada.</p>
+                          </div>
+                        </div>
+                        
+                        <div className="flex items-start gap-4">
+                          <div className="w-3 h-3 bg-[#6699cc] rounded-full mt-2 flex-shrink-0 shadow-lg"></div>
+                          <div>
+                            <h4 className="font-semibold text-[#6699cc] text-lg mb-1">UTEK Competition Director</h4>
+                            <p className="text-gray-300">End-to-end planning and execution of Re-engineering Competition.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Clean bottom accent */}
+                  <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-[#6699cc]/50 to-transparent"></div>
+                </div>
+              </motion.div>
             </motion.div>
           </div>
         </section>
