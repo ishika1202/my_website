@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, FileText, Rocket, Sparkles, Target, MessageCircle, ArrowRight } from "lucide-react";
+import { Github, Linkedin, Mail, FileText, Rocket, Sparkles, Target, MessageCircle, ArrowRight, Code, Database, Cloud, Cpu, Quote } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
@@ -157,7 +157,7 @@ const Index = () => {
                       <p className="text-[#6B4C74] font-medium">Key Work:</p>
                       <ul className="mt-2 space-y-2 text-[#9B8B9F]">
                         <li>• Working on Pod planner which plans 4000 pods under 5 seconds based on their size, sopace and inventory needed to stow</li>
-                        <li>• Developed internal service tool - StowVis for Robotics team to track station’s summary and allocated pods.</li>
+                        <li>• Developed internal service tool - StowVis for Robotics team to track station's summary and allocated pods.</li>
                       </ul>
                       </div>
                     </div>
@@ -223,6 +223,140 @@ const Index = () => {
             </motion.div>
 
 
+          </div>
+        </section>
+
+        {/* Skills Section */}
+        <section id="skills" className="relative py-24 px-6 lg:px-8 bg-gradient-to-b from-white via-gray-50/30 to-white scroll-mt-20 overflow-hidden">
+          {/* Tech background elements */}
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_50%_200px,#c7d2fe,transparent)]"></div>
+          
+          <div className="mx-auto max-w-7xl">
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="flex items-center gap-4 mb-12 relative">
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-900 rounded-lg blur opacity-10 group-hover:opacity-20 transition duration-1000 group-hover:duration-200"></div>
+                <Code className="w-8 h-8 text-primary" />
+                <h2 className="text-3xl font-bold">Technical Skills</h2>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {/* Programming Languages */}
+                <motion.div 
+                  whileHover={{ y: -5 }}
+                  className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border hover:border-blue-300 transition-all hover:shadow-blue-100/50 hover:shadow-xl group"
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <Cpu className="w-6 h-6 text-blue-600" />
+                    <h3 className="text-lg font-semibold text-gray-800">Languages</h3>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {["Python", "C++", "JavaScript", "TypeScript", "C#", "Go", "Java"].map((skill) => (
+                      <motion.span 
+                        key={skill}
+                        whileHover={{ scale: 1.1 }}
+                        className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm border border-blue-200 hover:bg-blue-100 transition-colors cursor-default"
+                      >
+                        {skill}
+                      </motion.span>
+                    ))}
+                  </div>
+                </motion.div>
+
+                {/* AI/ML & Data */}
+                <motion.div 
+                  whileHover={{ y: -5 }}
+                  className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border hover:border-purple-300 transition-all hover:shadow-purple-100/50 hover:shadow-xl group"
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <Sparkles className="w-6 h-6 text-purple-600" />
+                    <h3 className="text-lg font-semibold text-gray-800">AI/ML & Data</h3>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {["OpenAI", "Scikit-learn", "TensorFlow", "OpenCV", "MediaPipe", "Matplotlib", "NumPy", "Pandas"].map((skill) => (
+                      <motion.span 
+                        key={skill}
+                        whileHover={{ scale: 1.1 }}
+                        className="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm border border-purple-200 hover:bg-purple-100 transition-colors cursor-default"
+                      >
+                        {skill}
+                      </motion.span>
+                    ))}
+                  </div>
+                </motion.div>
+
+                {/* Web & Mobile */}
+                <motion.div 
+                  whileHover={{ y: -5 }}
+                  className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border hover:border-green-300 transition-all hover:shadow-green-100/50 hover:shadow-xl group"
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <Code className="w-6 h-6 text-green-600" />
+                    <h3 className="text-lg font-semibold text-gray-800">Web & Mobile</h3>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {["React", "Flask", "FastAPI", "Unity", "Bootstrap", "HTML", "CSS", "Node.js"].map((skill) => (
+                      <motion.span 
+                        key={skill}
+                        whileHover={{ scale: 1.1 }}
+                        className="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm border border-green-200 hover:bg-green-100 transition-colors cursor-default"
+                      >
+                        {skill}
+                      </motion.span>
+                    ))}
+                  </div>
+                </motion.div>
+
+                {/* Infrastructure & Tools */}
+                <motion.div 
+                  whileHover={{ y: -5 }}
+                  className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border hover:border-orange-300 transition-all hover:shadow-orange-100/50 hover:shadow-xl group"
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <Cloud className="w-6 h-6 text-orange-600" />
+                    <h3 className="text-lg font-semibold text-gray-800">Infrastructure</h3>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {["Docker", "AWS", "Git", "Linux", "APIs", "Databases", "Multithreading", "STL"].map((skill) => (
+                      <motion.span 
+                        key={skill}
+                        whileHover={{ scale: 1.1 }}
+                        className="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm border border-orange-200 hover:bg-orange-100 transition-colors cursor-default"
+                      >
+                        {skill}
+                      </motion.span>
+                    ))}
+                  </div>
+                </motion.div>
+              </div>
+
+              {/* Technical Highlights */}
+              <motion.div 
+                whileHover={{ scale: 1.02 }}
+                className="mt-12 bg-gradient-to-r from-blue-50 via-purple-50 to-blue-50 rounded-xl p-8 border border-blue-200"
+              >
+                <h3 className="text-xl font-semibold mb-4 text-center text-gray-800">Technical Highlights</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                  <div>
+                    <div className="text-2xl font-bold text-blue-600 mb-2">95%</div>
+                    <p className="text-gray-600">Efficiency improvement through automation</p>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-purple-600 mb-2">80%</div>
+                    <p className="text-gray-600">Search performance enhancement</p>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-green-600 mb-2">4000</div>
+                    <p className="text-gray-600">Pods planned in under 5 seconds</p>
+                  </div>
+                </div>
+              </motion.div>
+            </motion.div>
           </div>
         </section>
 
@@ -327,6 +461,106 @@ const Index = () => {
                   <p className="text-gray-600 dark:text-gray-300">National Interactive Maths Olympiad 2016</p>
                 </motion.div>
               </div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Testimonials Section */}
+        <section id="testimonials" className="relative py-24 px-6 lg:px-8 bg-gradient-to-b from-gray-50 via-white to-gray-50 scroll-mt-20 overflow-hidden">
+          {/* Tech background elements */}
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,#e0e7ff,transparent)]"></div>
+          
+          <div className="mx-auto max-w-7xl">
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="flex items-center gap-4 mb-12 relative">
+                <div className="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-900 rounded-lg blur opacity-10 group-hover:opacity-20 transition duration-1000 group-hover:duration-200"></div>
+                <Quote className="w-8 h-8 text-primary" />
+                <h2 className="text-3xl font-bold">What Others Say</h2>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <motion.div 
+                  whileHover={{ y: -5 }}
+                  className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border hover:border-indigo-300 transition-all hover:shadow-indigo-100/50 hover:shadow-xl group relative"
+                >
+                  <Quote className="w-8 h-8 text-indigo-300 mb-4" />
+                  <p className="text-gray-600 mb-6 italic">
+                    "Ishika's innovative approach to AI and sensor integration at Coconut is groundbreaking. Her ability to bridge the gap between hardware and software is remarkable."
+                  </p>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center text-white font-semibold">
+                      TL
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-800">Tech Lead</p>
+                      <p className="text-sm text-gray-500">Industry Partner</p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                <motion.div 
+                  whileHover={{ y: -5 }}
+                  className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border hover:border-purple-300 transition-all hover:shadow-purple-100/50 hover:shadow-xl group relative"
+                >
+                  <Quote className="w-8 h-8 text-purple-300 mb-4" />
+                  <p className="text-gray-600 mb-6 italic">
+                    "Working with Ishika at Amazon Robotics was incredible. Her pod planning system significantly improved our operational efficiency and demonstrated exceptional engineering skills."
+                  </p>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center text-white font-semibold">
+                      AM
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-800">Amazon Manager</p>
+                      <p className="text-sm text-gray-500">Amazon Robotics</p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                <motion.div 
+                  whileHover={{ y: -5 }}
+                  className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border hover:border-blue-300 transition-all hover:shadow-blue-100/50 hover:shadow-xl group relative"
+                >
+                  <Quote className="w-8 h-8 text-blue-300 mb-4" />
+                  <p className="text-gray-600 mb-6 italic">
+                    "Ishika's AI model for dementia prediction using gait analysis was revolutionary. Her technical expertise and healthcare application insights were impressive."
+                  </p>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-full flex items-center justify-center text-white font-semibold">
+                      FF
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-800">Flicfit Team</p>
+                      <p className="text-sm text-gray-500">Healthcare AI</p>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+
+              {/* Call to action */}
+              <motion.div 
+                whileHover={{ scale: 1.02 }}
+                className="mt-12 text-center"
+              >
+                <p className="text-gray-600 mb-6">
+                  Interested in working together or learning more about my projects?
+                </p>
+                <a 
+                  href="https://calendly.com/ishika-mittal-02/yc-connect"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl font-medium"
+                >
+                  Schedule a Chat
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </motion.div>
             </motion.div>
           </div>
         </section>
