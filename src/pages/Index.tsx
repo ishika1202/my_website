@@ -119,7 +119,7 @@ const Index = () => {
                   <Mail className="w-6 h-6" />
                 </a>
                 <a 
-                  href="/Ishika_Resume.pdf"
+                  href="/my_website/ishika_resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"
@@ -383,134 +383,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Skills Section */}
-        <section id="skills" className="py-24 px-8 lg:px-20 scroll-mt-20 bg-background">
-          <div className="mx-auto max-w-7xl">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              <div className="flex items-center gap-4 mb-12">
-                <Code className="w-8 h-8 text-primary" />
-                <h2 className="text-3xl font-bold">Technical Skills</h2>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                {/* Programming Languages */}
-                <motion.div 
-                  whileHover={{ y: -5 }}
-                  className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border hover:border-blue-300 transition-all hover:shadow-blue-100/50 hover:shadow-xl group"
-                >
-                  <div className="flex items-center gap-3 mb-4">
-                                          <Cpu className="w-6 h-6 text-[#6699cc]" />
-                    <h3 className="text-lg font-semibold text-gray-800">Languages</h3>
-                    </div>
-                  <div className="flex flex-wrap gap-2">
-                    {["Python", "C++", "JavaScript", "TypeScript", "C#", "Go", "Java"].map((skill) => (
-                      <motion.span 
-                        key={skill}
-                        whileHover={{ scale: 1.1 }}
-                        className="px-3 py-1 bg-[#6699cc]/10 text-[#6699cc] rounded-full text-sm border border-[#6699cc]/20 hover:bg-[#6699cc]/20 transition-colors cursor-default"
-                      >
-                        {skill}
-                      </motion.span>
-                    ))}
-                  </div>
-                </motion.div>
 
-                {/* AI/ML & Data */}
-                <motion.div 
-                  whileHover={{ y: -5 }}
-                  className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border hover:border-purple-300 transition-all hover:shadow-purple-100/50 hover:shadow-xl group"
-                >
-                  <div className="flex items-center gap-3 mb-4">
-                    <Sparkles className="w-6 h-6 text-purple-600" />
-                    <h3 className="text-lg font-semibold text-gray-800">AI/ML & Data</h3>
-                    </div>
-                  <div className="flex flex-wrap gap-2">
-                    {["OpenAI", "Scikit-learn", "TensorFlow", "OpenCV", "MediaPipe", "Matplotlib", "NumPy", "Pandas"].map((skill) => (
-                      <motion.span 
-                        key={skill}
-                        whileHover={{ scale: 1.1 }}
-                        className="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm border border-purple-200 hover:bg-purple-100 transition-colors cursor-default"
-                      >
-                        {skill}
-                      </motion.span>
-                    ))}
-                  </div>
-                </motion.div>
-
-                {/* Web & Mobile */}
-                <motion.div 
-                  whileHover={{ y: -5 }}
-                  className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border hover:border-green-300 transition-all hover:shadow-green-100/50 hover:shadow-xl group"
-                >
-                  <div className="flex items-center gap-3 mb-4">
-                    <Code className="w-6 h-6 text-green-600" />
-                    <h3 className="text-lg font-semibold text-gray-800">Web & Mobile</h3>
-                    </div>
-                  <div className="flex flex-wrap gap-2">
-                    {["React", "Flask", "FastAPI", "Unity", "Bootstrap", "HTML", "CSS", "Node.js"].map((skill) => (
-                      <motion.span 
-                        key={skill}
-                        whileHover={{ scale: 1.1 }}
-                        className="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm border border-green-200 hover:bg-green-100 transition-colors cursor-default"
-                      >
-                        {skill}
-                      </motion.span>
-                    ))}
-                  </div>
-                </motion.div>
-
-                {/* Infrastructure & Tools */}
-                <motion.div 
-                  whileHover={{ y: -5 }}
-                  className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border hover:border-orange-300 transition-all hover:shadow-orange-100/50 hover:shadow-xl group"
-                >
-                  <div className="flex items-center gap-3 mb-4">
-                    <Cloud className="w-6 h-6 text-orange-600" />
-                    <h3 className="text-lg font-semibold text-gray-800">Infrastructure</h3>
-                    </div>
-                  <div className="flex flex-wrap gap-2">
-                    {["Docker", "AWS", "Git", "Linux", "APIs", "Databases", "Multithreading", "STL"].map((skill) => (
-                      <motion.span 
-                        key={skill}
-                        whileHover={{ scale: 1.1 }}
-                        className="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm border border-orange-200 hover:bg-orange-100 transition-colors cursor-default"
-                      >
-                        {skill}
-                      </motion.span>
-                    ))}
-                  </div>
-                </motion.div>
-              </div>
-
-              {/* Technical Highlights */}
-              <motion.div 
-                whileHover={{ scale: 1.02 }}
-                className="mt-12 bg-gradient-to-r from-blue-50 via-purple-50 to-blue-50 rounded-xl p-8 border border-blue-200"
-              >
-                <h3 className="text-xl font-semibold mb-4 text-center text-gray-800">Technical Highlights</h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-                  <div>
-                    <div className="text-2xl font-bold text-[#6699cc] mb-2">95%</div>
-                    <p className="text-gray-600">Efficiency improvement through automation</p>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-purple-600 mb-2">80%</div>
-                    <p className="text-gray-600">Search performance enhancement</p>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-green-600 mb-2">4000</div>
-                    <p className="text-gray-600">Pods planned in under 5 seconds</p>
-                  </div>
-                </div>
-              </motion.div>
-            </motion.div>
-          </div>
-        </section>
 
         {/* Projects Section */}
         <section id="projects" className="py-24 px-8 lg:px-20 scroll-mt-20 bg-background">

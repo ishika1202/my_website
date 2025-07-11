@@ -2,7 +2,7 @@ import { Mail, ArrowRight } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-background border-t border-border py-6 px-6">
+    <footer className="bg-gray-900 border-t border-border py-6 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Contact & Button */}
         <div className="flex items-center justify-center gap-6 mb-4">
