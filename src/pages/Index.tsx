@@ -191,21 +191,19 @@ const Index = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Amazon Robotics - Flip Card */}
                 <motion.div 
-                  className="col-span-1 md:col-span-2 h-80 perspective-1000"
+                  className="col-span-1 md:col-span-2 h-64 perspective-1000"
                 >
                   <div className="group relative w-full h-full transition-transform duration-700 transform-style-preserve-3d hover:rotate-y-180">
                     {/* Front Face */}
-                    <div className="absolute inset-0 w-full h-full backface-hidden bg-card border border-border rounded-xl p-8">
-                                             <div className="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-8 items-center h-full">
+                    <div className="absolute inset-0 w-full h-full backface-hidden bg-card border border-border rounded-xl p-6">
+                                             <div className="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-6 items-start h-full pt-4">
                                                  {/* Left side - Large Amazon Logo */}
-                         <div className="flex justify-center lg:justify-start">
-                           <div className="w-64 h-52 lg:w-80 lg:h-64 bg-white rounded-xl p-3 flex items-center justify-center shadow-lg">
-                            <img 
-                              src="/my_website/amazon.png"
-                              alt="Amazon Robotics Logo" 
-                              className="w-full h-full object-contain"
-                            />
-                          </div>
+                         <div className="flex justify-center lg:justify-start items-start">
+                           <img 
+                             src="/my_website/amazon.png"
+                             alt="Amazon Robotics Logo" 
+                             className="w-56 h-40 lg:w-72 lg:h-48 object-contain"
+                           />
                         </div>
                         
                         {/* Right side - Company and Role Info */}
@@ -261,21 +259,19 @@ const Index = () => {
 
                 {/* FlicFit - Flip Card */}
                 <motion.div 
-                  className="col-span-1 md:col-span-2 h-80 perspective-1000"
+                  className="col-span-1 md:col-span-2 h-64 perspective-1000"
                 >
                   <div className="group relative w-full h-full transition-transform duration-700 transform-style-preserve-3d hover:rotate-y-180">
                     {/* Front Face */}
-                    <div className="absolute inset-0 w-full h-full backface-hidden bg-card border border-border rounded-xl p-8">
-                      <div className="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-8 items-center h-full">
+                    <div className="absolute inset-0 w-full h-full backface-hidden bg-card border border-border rounded-xl p-6">
+                      <div className="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-6 items-start h-full pt-4">
                         {/* Left side - Large FlicFit Logo */}
-                        <div className="flex justify-center lg:justify-start">
-                          <div className="w-64 h-52 lg:w-80 lg:h-64 bg-white rounded-xl p-3 flex items-center justify-center shadow-lg">
-                            <img 
-                              src="/my_website/flicfit1.png"
-                              alt="FlicFit Logo" 
-                              className="w-full h-full object-contain"
-                            />
-                          </div>
+                        <div className="flex justify-center lg:justify-start items-start">
+                          <img 
+                            src="/my_website/flicfit1.png"
+                            alt="FlicFit Logo" 
+                            className="w-56 h-40 lg:w-72 lg:h-48 object-contain"
+                          />
                         </div>
                         
                         {/* Right side - Company and Role Info */}
@@ -324,21 +320,19 @@ const Index = () => {
 
                 {/* Nokia - Flip Card */}
                 <motion.div 
-                  className="col-span-1 md:col-span-2 h-80 perspective-1000"
+                  className="col-span-1 md:col-span-2 h-64 perspective-1000"
                 >
                   <div className="group relative w-full h-full transition-transform duration-700 transform-style-preserve-3d hover:rotate-y-180">
                     {/* Front Face */}
-                    <div className="absolute inset-0 w-full h-full backface-hidden bg-card border border-border rounded-xl p-8">
-                      <div className="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-8 items-center h-full">
+                    <div className="absolute inset-0 w-full h-full backface-hidden bg-card border border-border rounded-xl p-6">
+                      <div className="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-6 items-start h-full pt-4">
                         {/* Left side - Large Nokia Logo */}
-                        <div className="flex justify-center lg:justify-start">
-                          <div className="w-64 h-52 lg:w-80 lg:h-64 bg-white rounded-xl p-3 flex items-center justify-center shadow-lg">
-                            <img 
-                              src="/my_website/Nokia-Logo.jpg"
-                              alt="Nokia Logo" 
-                              className="w-full h-full object-contain"
-                            />
-                          </div>
+                        <div className="flex justify-center lg:justify-start items-start">
+                          <img 
+                            src="/my_website/Nokia-Logo.jpg"
+                            alt="Nokia Logo" 
+                            className="w-56 h-40 lg:w-72 lg:h-48 object-contain"
+                          />
                         </div>
                         
                         {/* Right side - Company and Role Info */}
@@ -738,8 +732,8 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Testimonials Section */}
-        <section id="testimonials" className="py-24 px-8 lg:px-20 scroll-mt-20 bg-background">
+        {/* Community Section */}
+        <section id="community" className="py-24 px-8 lg:px-20 scroll-mt-20 bg-background">
           <div className="mx-auto max-w-7xl">
             <motion.div
               initial={{ opacity: 0 }}
@@ -748,147 +742,61 @@ const Index = () => {
               transition={{ duration: 0.5 }}
             >
               <div className="flex items-center gap-4 mb-12">
-                <Quote className="w-8 h-8 text-primary" />
-                <h2 className="text-3xl font-bold">What Others Say</h2>
+                <MessageCircle className="w-8 h-8 text-[#6699cc]" />
+                <h2 className="text-3xl font-bold text-white">Community Involvement</h2>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <motion.div 
-                  whileHover={{ y: -5 }}
-                  className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border hover:border-indigo-300 transition-all hover:shadow-indigo-100/50 hover:shadow-xl group relative"
-                >
-                  <Quote className="w-8 h-8 text-indigo-300 mb-4" />
-                  <p className="text-gray-600 mb-6 italic">
-                    "Ishika's innovative approach to AI and sensor integration at Coconut is groundbreaking. Her ability to bridge the gap between hardware and software is remarkable."
-                  </p>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center text-white font-semibold">
-                      TL
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-800">Tech Lead</p>
-                      <p className="text-sm text-gray-500">Industry Partner</p>
-                    </div>
-                  </div>
-                </motion.div>
-
-                <motion.div 
-                  whileHover={{ y: -5 }}
-                  className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border hover:border-purple-300 transition-all hover:shadow-purple-100/50 hover:shadow-xl group relative"
-                >
-                  <Quote className="w-8 h-8 text-purple-300 mb-4" />
-                  <p className="text-gray-600 mb-6 italic">
-                    "Working with Ishika at Amazon Robotics was incredible. Her pod planning system significantly improved our operational efficiency and demonstrated exceptional engineering skills."
-                  </p>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center text-white font-semibold">
-                      AM
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-800">Amazon Manager</p>
-                      <p className="text-sm text-gray-500">Amazon Robotics</p>
-                    </div>
-                  </div>
-                </motion.div>
-
-                <motion.div 
-                  whileHover={{ y: -5 }}
-                  className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border hover:border-blue-300 transition-all hover:shadow-blue-100/50 hover:shadow-xl group relative"
-                >
-                  <Quote className="w-8 h-8 text-blue-300 mb-4" />
-                  <p className="text-gray-600 mb-6 italic">
-                    "Ishika's AI model for dementia prediction using gait analysis was revolutionary. Her technical expertise and healthcare application insights were impressive."
-                  </p>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-gradient-to-r from-[#6699cc] to-cyan-600 rounded-full flex items-center justify-center text-white font-semibold">
-                      FF
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-800">Flicfit Team</p>
-                      <p className="text-sm text-gray-500">Healthcare AI</p>
-                    </div>
-                  </div>
-                </motion.div>
-              </div>
-
-              {/* Call to action */}
+              {/* Community Card */}
               <motion.div 
-                whileHover={{ scale: 1.02 }}
-                className="mt-12 text-center"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1, duration: 0.6 }}
+                className="bg-card border border-border rounded-xl overflow-hidden"
               >
-                <p className="text-gray-600 mb-6">
-                  Interested in working together or learning more about my projects?
-                </p>
-                <a 
-                  href="https://calendly.com/ishika-mittal-02/yc-connect"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl font-medium"
-                >
-                  Schedule a Chat
-                  <ArrowRight className="w-4 h-4" />
-                </a>
+                <div className="grid grid-cols-1 lg:grid-cols-[600px_1fr] gap-0 items-stretch">
+                  {/* Left side - Community Image */}
+                  <div className="relative overflow-hidden rounded-l-xl lg:rounded-r-none">
+                    <img 
+                      src="/my_website/community.png"
+                      alt="Community Leadership" 
+                      className="w-full h-full min-h-[300px] lg:min-h-[400px] object-cover"
+                    />
+                  </div>
+                  
+                  {/* Right side - Community Info */}
+                  <div className="p-8 space-y-6 text-center lg:text-left">
+                    
+                    <div className="space-y-4 text-gray-300 text-base lg:text-lg leading-relaxed">
+                      <div className="flex items-start gap-3">
+                        <span className="w-2 h-2 bg-[#6699cc] rounded-full mt-3 flex-shrink-0"></span>
+                        <p>
+                          <strong className="text-white">Tech Lead Toronto, Rewriting the Code - </strong> Leading local chapter for early-career women in tech; host bi-monthly events and mentorship sessions for community of 2600+ women.
+                        </p>
+                      </div>
+                      
+                      <div className="flex items-start gap-3">
+                        <span className="w-2 h-2 bg-[#6699cc] rounded-full mt-3 flex-shrink-0"></span>
+                        <p>
+                          <strong className="text-white">Organized 300+ attendee WISE STEM nation-wide conference in Canada.</strong> Led menstrual health campaign in India, distributing over 600+ sanitary products.
+                        </p>
+                      </div>
+                      
+                      <div className="flex items-start gap-3">
+                        <span className="w-2 h-2 bg-[#6699cc] rounded-full mt-3 flex-shrink-0"></span>
+                        <p>
+                          <strong className="text-white">Directed the end-to-end planning and execution of UTEK's Re-engineering Competition,</strong> including challenge design, event logistics, and report evaluation to determine winners.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </motion.div>
             </motion.div>
           </div>
         </section>
 
-        {/* Contact Section */}
-        <section id="contact" className="py-24 px-8 lg:px-20 scroll-mt-20 bg-background">
-          <div className="mx-auto max-w-7xl">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              <div className="flex items-center gap-4 mb-12">
-                <MessageCircle className="w-8 h-8 text-primary" />
-                <h2 className="text-3xl font-bold">Let's Connect</h2>
-              </div>
-              
-              <div className="grid grid-cols-1 gap-8">
-                <motion.div 
-                  whileHover={{ scale: 1.02 }}
-                  className="bg-card rounded-xl p-8 shadow-lg max-w-2xl mx-auto w-full"
-                >
-                  <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-6">
-                    Whether you're interested in collaboration, investment opportunities, 
-                    or just want to say hi - I'd love to hear from you!
-                  </p>
-                  <div className="space-y-4 mb-6">
-                    <a 
-                      href="mailto:ishika.mittal@mail.utoronto.ca"
-                      className="flex items-center gap-3 text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
-                    >
-                      <Mail className="w-5 h-5" />
-                      ishika.mittal@mail.utoronto.ca
-                    </a>
-                    <a 
-                      href="https://linkedin.com/in/ishika-mittal1202"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-3 text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
-                    >
-                      <Linkedin className="w-5 h-5" />
-                      Connect on LinkedIn
-                    </a>
-                  </div>
-                  <a 
-                    href="https://calendly.com/ishika-mittal-02/yc-connect"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
-                  >
-                    Book Demo
-                    <ArrowRight className="w-4 h-4" />
-                  </a>
-                </motion.div>
-              </div>
-            </motion.div>
-          </div>
-        </section>
+
 
         <Footer />
       </main>
