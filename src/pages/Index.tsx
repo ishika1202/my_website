@@ -572,8 +572,8 @@ const Index = () => {
               transition={{ duration: 0.5 }}
             >
               <div className="flex items-center gap-4 mb-12">
-                <Target className="w-8 h-8 text-primary" />
-                <h2 className="text-3xl font-bold">Accomplishments</h2>
+                <Target className="w-8 h-8 text-[#6699cc]" />
+                <h2 className="text-3xl font-bold text-white">Accomplishments</h2>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -581,24 +581,24 @@ const Index = () => {
                   whileHover={{ scale: 1.05 }}
                   className="bg-card rounded-xl p-6 shadow-lg text-center"
                 >
-                  <div className="text-4xl font-bold text-primary mb-2">Cansbridge Fellowship 2024</div>
-                  <p className="text-gray-600 dark:text-gray-300">Acceptence Rate - 1%</p>
+                  <div className="text-4xl font-bold text-[#6699cc] mb-2">Cansbridge Fellowship 2024</div>
+                  <p className="text-gray-300">Acceptence Rate - 1%</p>
                 </motion.div>
 
                 <motion.div 
                   whileHover={{ scale: 1.05 }}
                   className="bg-card rounded-xl p-6 shadow-lg text-center"
                 >
-                  <div className="text-4xl font-bold text-primary mb-2">TreeHacks 2024 Track Winner</div>
-                  <p className="text-gray-600 dark:text-gray-300">:)</p>
+                  <div className="text-4xl font-bold text-[#6699cc] mb-2">TreeHacks 2024 Track Winner</div>
+                  <p className="text-gray-300">:)</p>
                 </motion.div>
 
                 <motion.div 
                   whileHover={{ scale: 1.05 }}
                   className="bg-card rounded-xl p-6 shadow-lg text-center"
                 >
-                  <div className="text-4xl font-bold text-primary mb-2">National Rank 1</div>
-                  <p className="text-gray-600 dark:text-gray-300">National Interactive Maths Olympiad 2016</p>
+                  <div className="text-4xl font-bold text-[#6699cc] mb-2">National Rank 1</div>
+                  <p className="text-gray-300">National Interactive Maths Olympiad 2016</p>
                 </motion.div>
               </div>
             </motion.div>
